@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Saifullah Portfolio</title>
+    <style>
+        body { font-family: sans-serif; background: #fafafa; margin: 0; padding: 0; }
+        .form-container { max-width: 500px; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 30px auto; }
+        input, textarea, button { width: 100%; padding: 12px; margin-top: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background: #333; color: white; border: none; font-weight: bold; cursor: pointer; transition: background 0.2s; }
+        button:hover { background: #555; }
+        label { display: block; margin-top: 15px; font-weight: bold; color: #333; }
+    </style>
+</head>
+<body>
+
+<nav style="background-color: #333; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="color: white; font-weight: bold; font-size: 20px;">Saif | Portfolio</div>
+    <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+        <li style="margin-left: 20px;"><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li style="margin-left: 20px;"><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
+        <li style="margin-left: 20px;"><a href="projects.html" style="color: white; text-decoration: none;">Projects</a></li>
+        <li style="margin-left: 20px;"><a href="experience.html" style="color: white; text-decoration: none;">Experience</a></li>
+        <li style="margin-left: 20px;"><a href="skills.html" style="color: white; text-decoration: none;">Skills</a></li>
+        <li style="margin-left: 20px;"><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+    </ul>
+</nav>
+
+<main style="padding: 40px; max-width: 800px; margin: auto; text-align: center;">
+    <h1>Contact Me</h1>
+    <p>Feel free to reach out to me through the secure channel below:</p>
+    
+    <div class="form-container">
+        <h3 style="margin-top:0; text-align: left;">Enquiry Form</h3>
+        <form action="#" method="POST" style="text-align: left;">
+            <label>Full Name</label>
+            <input type="text" placeholder="Your Name" required pattern="[A-Za-z\s]{3,50}">
+
+            <label>Email Address</label>
+            <input type="email" placeholder="name@example.com" required>
+
+            <label>Message Payload</label>
+            <textarea placeholder="Type your message here..." rows="5" required></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

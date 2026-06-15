@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn: Log In or Sign Up</title>
+    <style>
+        /* Global Reset & Theme Styling */
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #191919;
+        }
+
+        /* Component 1: Top Navigation Header */
+        header {
+            background-color: #ffffff;
+            padding: 12px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        header h2 {
+            color: #0a66c2; /* LinkedIn Official Blue */
+            font-size: 24px;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+        .nav-links a {
+            color: #555;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .nav-links .join-btn {
+            color: #000000bf;
+            padding: 10px 20px;
+            border-radius: 24px;
+        }
+        .nav-links .join-btn:hover {
+            background-color: rgba(0,0,0,0.04);
+        }
+
+        /* Component 2: Announcement Alert Banner */
+        .alert-banner {
+            background-color: #fcecdb;
+            padding: 12px 50px;
+            text-align: center;
+            font-size: 14px;
+            border-bottom: 1px solid #eccfb3;
+            color: #5c3b1e;
+        }
+
+        /* Component 3: Main Hero Layout Frame */
+        main {
+            max-width: 1128px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .hero-left {
+            flex: 1;
+            min-width: 300px;
+            margin-right: 20px;
+        }
+        .hero-right {
+            flex: 1;
+            min-width: 300px;
+            text-align: right;
+        }
+        h1 {
+            font-size: 48px;
+            color: #8f5849; /* Official LinkedIn Landing Page Burgundy */
+            font-weight: 200;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+
+        /* Component 4: Embedded Login Form Box */
+        .login-card {
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            max-width: 400px;
+            border: 1px solid #e0e0e0;
+        }
+        .input-field {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 16px;
+            border: 1px solid #666;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .submit-btn {
+            background-color: #0a66c2;
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 28px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        .submit-btn:hover {
+            background-color: #004182;
+        }
+
+        /* Component 5: Graphical Layout Placeholder */
+        .image-placeholder {
+            width: 100%;
+            max-width: 500px;
+            height: 400px;
+            background-color: #f3f2ef;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: bold;
+            border: 2px dashed #ccc;
+        }
+
+        /* Component 6: Footer Navigation Directory */
+        footer {
+            background-color: #f3f2ef;
+            padding: 30px 50px;
+            margin-top: 60px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+        footer a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+            color: #0a66c2;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>LinkedIn</h2>
+        <div class="nav-links">
+            <a href="#" class="join-btn">Join now</a>
+            <a href="#" style="border: 1px solid #0a66c2; color: #0a66c2; padding: 10px 20px; border-radius: 24px;">Sign in</a>
+        </div>
+    </header>
+
+    <div class="alert-banner">
+        <strong>Security Notice:</strong> Always verify the URL address bar parameters before executing remote sign-in sequences.
+    </div>
+
+    <main>
+        <div class="hero-left">
+            <h1>Welcome to your professional community</h1>
+            
+            <div class="login-card">
+                <form action="#" method="POST">
+                    <label style="display:block; margin-bottom:5px; font-weight:600;">Email or phone number</label>
+                    <input type="text" class="input-field" required>
+                    
+                    <label style="display:block; margin-bottom:5px; font-weight:600;">Password</label>
+                    <input type="password" class="input-field" required>
+                    
+                    <button type="submit" class="submit-btn">Sign in</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="hero-right">
+            <div class="image-placeholder">
+                [High-Yield Hero Asset Vector Placeholder]
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 LinkedIn Clone Project Deployment Matrix</p>
+        <p>
+            <a href="#">User Agreement</a> | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Community Guidelines</a> | 
+            <a href="#">Cookie Policy</a> | 
+            <a href="#">Copyright Policy</a>
+        </p>
+    </footer>
+
+</body>
+</html>
